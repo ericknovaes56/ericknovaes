@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --principal-color:#EB4034;
+    --principal-color-transparent:#eb4034a2;
+
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+}
+main button{
+    background-color: var(--principal-color-transparent);
+    border: 2px solid var(--principal-color);
+    outline: none;
+    padding: 10px;
+    width: 230px;
+    height: 50px;
+    border-radius: 999px;
+    color: white;
+    cursor: pointer;
+}
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: whitesmoke;
+}
