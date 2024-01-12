@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+header{
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+    position: relative;
+}
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    user-select: none;
+}
+header .content-max{
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+header .right img{
+    border-radius: 100px 0 100px 0px;
+    max-width: 100%;
+    width: 400px;
+}
+header .left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+header .left .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+}
+header .left .text h1{
+    font-size: 50px;
+    font-family: 'Work Sans', sans-serif;
+    color: gray;
+    font-weight: 300;
+}
+header .left .text h1 b{
+    font-weight: 900;
+}
+header .left .actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+header .left .actions a {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 13px;
+    border-radius: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all .3s ease;
+    
+}
+header .left .actions a:hover{
+    background-color: white;
+    color: black;
+
+}
+header .left .actions a svg{
+    transition: all .3s ease;
+    
+}
+header .left .actions a:hover svg{
+    fill: black;
+}
+header .left .actions a.dif{
+    background-color: white;
+    color: black;
+}
+header .left .actions a.dif:hover{
+    background-color: transparent;
+    color: white;
+}
+header .left .actions a.dif:hover svg{
+    fill: white;
+}
+header .left .input{
+    display: flex;
+    justify-content: center;
+
+}
+header .left .input input{
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 13px 0px 0px 13px;
+    border-right: none;
+    text-align: center;
+    outline: none;
+}
+header .left .input button{
+    width: 60px;
+    border-radius: 0 13px 13px 0;
+    border: 1px solid gray;
+    background-color: gray;
+    cursor: pointer;
+}
+.repos{
+    padding-bottom: 50px;
+}
+
+div.dif , section.dif , footer.dif{
+    background-color:#273036 ;
+}
+.bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgb(88, 78, 78);
+    transform-origin: 0%;
+    z-index: 101212321372163767120;
+}
+.repos .content-max {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.repos .content-max .scroll{
+    overflow: hidden;
+    width: 100%;
+}
+.repos .content-max .cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    cursor:grab;
+}
+.repos .content-max .cards::-webkit-scrollbar{
+    display: none;
+}
+.repos .content-max .cards .card{
+    text-decoration: none;
+    flex: none;
+    display: flex;
+    height: 400px;
+    width: 300px;
+    border: 1px solid gray;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 20px;
+    transition: all .3s ease;
+}
+.repos .content-max .cards .card:hover{
+    border: 1px solid white;
+}
+.repos .content-max .cards .card img{
+    width: 50px;
+    padding: 10px;
+    background-color: #404c55;
+    border-radius: 10px;
+}
+.repos .content-max .cards .card .button{
+    display: flex;
+    height: 100%;
+    align-items: end;
+}
+.repos .content-max .cards .card .button a{
+    border: 1px solid gray;
+    padding: 10px 30px;
+    border-radius: 999px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: gray;
+    transition: all .3s ease;
+}
+
+.repos .content-max .cards .card .button a svg{
+    transition: all .3s ease;
+}
+.repos .content-max .cards .card:hover a{
+    color: white;
+    border:1px solid white;
+}
+.repos .content-max .cards .card:hover a svg{
+    fill: white;
+}
+.count{
+    display: flex;
+    padding-bottom: 50px;
+    position: relative;
+}
+.count .content-max{
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.count .content-max .seg-part{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+.count .content-max .seg-part .seg{
+    display: flex;
+    flex: 1;
+    background-color: rgba(73, 73, 94, 0.205);
+    border-radius: 20px;
+    min-height: 100px;
+    justify-content: center;
+    padding: 15px;
+    flex-direction: column;
+    font-size: 10px;
+    gap: 13px;
+    transition: all .3s ease;
+}
+.count .content-max .seg-part .seg:hover{
+    background-color: rgba(96, 96, 124, 0.678);
+}
+.count .content-max .seg-part div h1{
+    color: gray;
+}
+.count .content-max .seg-part div span{
+    font-size: 40px;
+}
+.count .content-max .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.count .content-max .text .profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.count .content-max .text .profile span{
+    font-weight: bold;
+    font-size: 30px;
+}
+.count .content-max .text .profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.count .content-max .xp{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+.count .content-max .langs{
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    width: 100%;
+}
+
+.count .content-max .erick{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+.count .content-max .erick .buttons{
+    display: flex;
+    gap: 10px;
+}
+.count .content-max .lengs{
+    display: flex;
+    gap:20px;
+}
+.count .content-max .erick .textinho{
+    margin-top: 23px;
+    max-width: 800px;
+}
+.reverse {
+    filter: saturate(0) invert(1); 
+}
+.wave2{
+    position: absolute;
+    transform: scale(-1,-1) translateY(-100%);
+    bottom: 0;
+
+}
+.projects{
+    position: relative;
+    z-index: 23;
+    margin-top: 40px;
+}
+.projects .content-max {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+.projects .content-max .title{
+    font-size: 50px;
+
+    margin-bottom: 70px;
+}
+.projects .content-max .projects-pai{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.projects .content-max .projects-pai .card.reverse-order{
+
+    flex-direction: row-reverse;
+
+}
+.projects .content-max .projects-pai .card img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+
+    transition: all .3s ease;
+}
+.projects .content-max .projects-pai .card img:hover{
+    transform: scale(0.95);
+}
+.projects .content-max .projects-pai .card{
+    display: flex;
+    gap: 30px;
+}
+.projects .content-max .projects-pai .card .text {
+    position: sticky;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    top: 110px;
+    gap: 20px;
+    transition: all .3s ease;
+}
+.projects .content-max .projects-pai .card .text p{
+    font-size: 25px;
+    color: rgb(182, 178, 178);
+}
+.carreira{
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.carreira .content-max{
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+}
+
+.carreira .container{
+    background-color: rgba(128, 128, 128, 0.39);
+    border: 2px solid gray;
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(60px);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.carreira .container img{
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+.carreira .container .text{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    border-bottom: 2px solid gray;
+    position: relative;
+    z-index: 1;
+}
+.carreira .container .text h1{
+    font-size: 40px;
+}
+.carreira .container .text .div-btn{
+    display: flex;
+    gap: 10px;
+}
+.carreira .oter{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.carreira .oter .proje{
+    background-color: rgba(128, 128, 128, 0.39);
+    border: 2px solid gray;
+    width: 100%;
+    min-height: 150px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(60px);
+    flex-direction: column;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.carreira .oter .proje .profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    z-index: 1;
+}
+.carreira .oter .proje p ,.carreira .oter .proje a{
+    z-index: 1;
+}
+
+.carreira .oter .proje img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.carreira .card{
+    position: relative;
+    overflow: hidden;
+    --mouse-x:0;
+    --mouse-y:0;
+}
+.carreira .card::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    background-color: rgba(128, 128, 128, 0.164);
+    border-radius: 50%;
+    filter: blur(50px);
+    transition: all 0.10s linear;
+    transform: translate(-50%,-50%);
+}
+.chat{
+    margin-top: 40px;
+
+}
+.chat .content-max {
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.chat .content-max .box-chat{
+    background-color: rgba(73, 73, 94, 0.664);
+    display: flex;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    padding: 30px;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.chat .content-max .box-chat::-webkit-scrollbar{
+    display: none;
+}
+.chat .content-max .box-chat .msgs{
+
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.chat .content-max .box-chat .msgs .box-msg {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    min-height: 60px;
+}
+.chat .content-max .box-chat .msgs .box-msg .profile{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: rgb(202, 193, 193);
+}
+.chat .content-max .box-chat .msgs .box-msg.client{
+    align-items: end;
+}
+.chat .content-max .box-chat .msgs .box-msg.client .profile{
+    flex-direction: row-reverse;
+}
+.chat .content-max .box-chat .msgs .box-msg.client .msg{
+       transform: translateY(-10px);
+      margin-right: calc(50px + 14px) ;
+}
+.chat .content-max .box-chat .msgs .box-msg .msg{
+    margin-left: calc(50px + 14px) ;
+    transform: translateY(-10px);
+    max-width: 450px;
+}
+.chat .content-max .box-chat .msgs .box-msg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.chat .content-max .box-chat .questions{
+    background-color: rgb(40, 40, 48);
+    border-radius: 14px;
+    padding: 20px 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    flex: none;
+    max-height: 150px;
+    overflow-y: auto;
+
+}
+.chat .content-max .box-chat .questions > span{
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 10px 14px;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all .3s ease;
+    user-select: none;
+
+}
+.chat .content-max .box-chat .questions > span:hover{
+    background-color: rgba(53, 52, 52, 0.473);
+}
+
+@media (max-width:871px){
+    .projects .content-max .projects-pai .card{
+        flex-direction: column;
+    }
+    .projects .content-max .projects-pai .card.reverse-order{
+        flex-direction: column;
+    }
+    .projects .content-max .projects-pai .card img{
+        width: 100%;
+    }
+    header .left .text h1{
+        font-size: 30px;
+    }
+    .carreira .container{
+        flex-direction: column-reverse;
+        border: none;
+    }
+    .carreira .container .text{
+        padding-bottom: 10px;
+    }
+    .carreira .container{
+        height: auto;
+        min-height: 400px;
+    }
+}
+@media (max-width:777px){
+    .carreira .oter{
+        flex-direction: column;
+    }
+}
+@media (max-width:500px){
+    header .left .text h1{
+        font-size: 20px;
+    }
+    .menu .options a{
+        padding: 10px 10px;
+    }
+    .menu .right a{
+        font-size: 14px;
+    }
+}
