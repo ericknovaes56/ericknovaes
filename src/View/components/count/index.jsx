@@ -65,7 +65,7 @@ export default function Count() {
 
 
   return (
-    <div className="count dif">
+    <div className="count dif" id="perfil">
       <div className="content-max">
         <div className="text">
           <span>#Perfil</span>

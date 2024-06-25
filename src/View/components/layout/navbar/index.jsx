@@ -36,12 +36,11 @@ export default function NavBar(){
                         <a href="#">inicio</a>
                     </li>
                     <li>
-                        <a href="#sobre">sobre</a>
+                        <a href="#perfil">Perfil</a>
                     </li>
                     <li>
-                        <a href="#">discord</a>
+                        <a href="#sobre">sobre</a>
                     </li>
-
                 </ul>
             </div>
         </nav>
