@@ -25,6 +25,8 @@ header .right img{
 header .left{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 header .left .text{
@@ -32,6 +34,7 @@ header .left .text{
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    z-index: 1;
 
 }
 header .left .text h1{
@@ -48,7 +51,7 @@ header .left .actions {
     justify-content: center;
     gap: 10px;
 }
-header .left .actions a {
+header .left .actions .headerbtn {
     background-color: transparent;
     border: 1px solid white;
     padding: 13px;
@@ -60,34 +63,51 @@ header .left .actions a {
     justify-content: center;
     gap: 10px;
     transition: all .3s ease;
+    cursor: pointer;
+    user-select: none;
     
 }
-header .left .actions a:hover{
+header .left .actions .headerbtn:hover{
     background-color: white;
     color: black;
 
 }
-header .left .actions a svg{
+header .left .actions .headerbtn  svg{
     transition: all .3s ease;
     
 }
-header .left .actions a:hover svg{
+header .left .actions .headerbtn:hover svg{
     fill: black;
 }
-header .left .actions a.dif{
+header .left .actions .headerbtn.dif{
     background-color: white;
     color: black;
 }
-header .left .actions a.dif:hover{
+header .left .actions .headerbtn.dif:hover{
     background-color: transparent;
     color: white;
 }
-header .left .actions a.dif:hover svg{
+header .numberHeader{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: #484e52;
+    margin: auto;
+    font-size: 100px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    z-index: 0;
+}
+header .left .actions .headerbtn.dif:hover svg{
     fill: white;
 }
 header .left .input{
     display: flex;
     justify-content: center;
+    width: 100%;
 
 }
 header .left .input input{
